@@ -1,24 +1,35 @@
 # ---Tuples---
 from turtle import update
 
-
-tuples=("Immutable","Mixed Values",55,False)
+tuples=("Immutable","Mixed Values","AKA records","BUT YOU CAN add and slice them",55,False)
 print(tuples[1])
 
+tips="most useful for packaging multiple values in a return statement, or making immutable lists to prevent user error."
+
+
 # ---Lists---
-list=["Brackets","Mutable","Mixed possible but tyypically similar types",5]
-print(list[2])
-list.pop()
-list.pop(1)
-list.append("Test")
-print(list)
+mylist=["Brackets","Mutable","Mixed possible but tyypically similar types",["nested list","this"],5]
+print("-----Nested list print:",mylist[3][0])
+mylist.pop()
+mylist.pop(1)
+mylist.append("Appends to end")
+newList=["!!!!!!This adds to front!!!!!!!!"]+mylist+["!!!!!!This adds to back!!!!!!!!"]
+print("------New List after concate:",newList)
+
+copyOfList=[1,2,3,4]
+print("------First index inclusive, 2nd index exclusive:",copyOfList[1:3])
+
+
+other_examples=[".extend(2ndlist) adds the lists together",
+".index(value) returns index at given value",
+]
 
 
 # ---Dictionaries----
-dictionary={"key":"value","age":28,"mutable":True}
-dictionary['key']="update"
+dictionary={"existing key":"value","age":28,"mutable":True}
+dictionary['existing key']="update"
 dictionary['new key']="new value"
-print(dictionary)
-remove_key_value=dictionary.pop('key')
+print("Dictionary: ",dictionary)
+remove_key_value=dictionary.pop('existing key')
 print(remove_key_value)
 print(dictionary)

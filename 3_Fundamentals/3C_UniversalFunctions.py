@@ -5,14 +5,14 @@ example="Example"
 print(example)
 
 
-# Type
+# --------Type--------------
 type(example)
 
 
-# Length
+# --------Length-----------
 len(example)
 
-# Conversion
+# ---------Conversion------------
 convert=5
 type(convert)
 
@@ -25,7 +25,15 @@ print(type(convert))
 convert=str(convert)
 print(type(convert))
 
-# Random
+# --------Random----------
 import random
 rand_num=random.randint(2,5)
 print(rand_num)
+
+
+# ----------Sequences---------
+enumerate(sequence)
+map(function,sequence)
+min(sequence) and max(sequence)
+sum (sequence)
+sorted(sequence)
