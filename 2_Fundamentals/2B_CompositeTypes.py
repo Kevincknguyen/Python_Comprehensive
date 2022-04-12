@@ -26,10 +26,14 @@ other_examples=[".extend(2ndlist) adds the lists together",
 
 
 # ---Dictionaries----
-dictionary={"existing key":"value","age":28,"mutable":True}
+dictionary={"existing key":"existing value","age":28,"mutable":True}
 dictionary['existing key']="update"
 dictionary['new key']="new value"
 print("Dictionary: ",dictionary)
 remove_key_value=dictionary.pop('existing key')
 print(remove_key_value)
 print(dictionary)
+
+# Existing keys must be UNIQUE
+
+built_in_fx_include=[".copy()","fromkeys(sequence,[value])",".items()",".keys()",".values()"]
