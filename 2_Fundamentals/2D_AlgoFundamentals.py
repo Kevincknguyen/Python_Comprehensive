@@ -11,7 +11,7 @@ conditionals={
 }
 
 
-#FOR LOOPS------------------------------------------------------------------------------------
+#----------------------FOR LOOPS------------------------------------------------------------------------------------
 inclusiveStart=0
 exclusiveStop=20
 step=2
@@ -32,7 +32,7 @@ for key,val in dictionary_specific.items():
     print (key,val)
 
 
-#While LOOPS------------------------------------------------------------------------------------
+#---------------------------While LOOPS------------------------------------------------------------------------------------
 
 while_condition=5
 while while_condition<10:
@@ -41,8 +41,24 @@ else:
     print("This else is considered part of loop... triggers only if no break or returns")
 
 
-#LOOPS TOOLS------------------------------------------------------------------------------------
+#-------------------LOOPS TOOLS------------------------------------------------------------------------------------
 
 a_break="breaks from the INNERMOST loop"
 b_continue="cancels current loop iteration, continues loop"
 c_return="breaks function"
+
+#-------------------Functions------------------------------------------------------------------------------------
+print("------------------Functions------------------------------------------------------------------------------------")
+def test(input, optional=5):
+    print(input , optional)
+    return ("Message completed")
+
+
+print(test("This is my function without optional"))
+assign_variable=test("This is my funciton","...with an optional")
+print(assign_variable)
+
+print(test(optional="where order doesn't matter",input="This is an explicit input"))
+
+message="In this case 'input' is a parameter that becomes arguments once it is defined for a specific instance of a function."
+
