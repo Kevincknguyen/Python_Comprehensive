@@ -13,4 +13,4 @@ Order of Reading:
 6)Bringing it all together
 
 
-Bookmark: Functions
+Bookmark: Class and static methods
