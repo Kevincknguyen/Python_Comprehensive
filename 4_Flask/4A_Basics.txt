@@ -1,0 +1,24 @@
+PLEASE REFER TO 1_START FILE WHICH CONTAINS PREREQUISITES FOR USING FLASK.
+
+Once you have completed setup, navigate to the project folder.
+
+1-----Basic Flask setup
+    Step_One= Create file name "server.py" or similar to handle routes
+
+    Step_Two=Include standard template material
+
+        from flask import Flask  # Import Flask to allow us to create our app
+        app = Flask(__name__)    # Create a new instance of the Flask class called "app"
+        @app.route('/')          # The "@" decorator associates this route with the function immediately following
+        def hello_world():
+            return 'Hello World!'  # Return the string 'Hello World!' as a response
+        if __name__=="__main__":   # Ensure this file is being run directly and not from a different module    
+            app.run(debug=True)    # Run the app in debug mode.
+
+    Step_Three= Navigate to folder and enter shell using pipenv shell
+
+    Step_Four= python server.py
+
+
+2-----Flask HTMl Setup
+    simply "return render_template("HTML FILE NAME")" as opposed toa string. HTMLS must be located in a templates (exact spelling) folder inside the same project folder. 4A Example_1 will show.

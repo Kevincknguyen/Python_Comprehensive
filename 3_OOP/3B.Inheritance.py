@@ -33,7 +33,7 @@ class User:
 
 class Runner(User):
     #IN THE INIT INCLUDE EVERYTHING, INCLUDING THE TRAITS INHERITED FROM SUPER
-    def __init__(self,name,email,speed=0):
+    def __init__(self,name,speed,email):
         super().__init__(name,email)
         self.speed=speed
 
@@ -41,12 +41,22 @@ class Runner(User):
         super().talk(message)
         print(self.name,"says","I'm also a runner")
 
+#INHERITANCE #2
+class Crazy(User):
+    def talk(self):
+        print("hoopla")
 
-kevin=Runner("Kevin","kevin.ck.nguyen@gmail.com",5)
+
+
+
+
+kevin=Runner("Kevin",5,"kevin.ck.nguyen@gmail.com")
 tim=User("Tim")
+crazy=Crazy("Crazy")
 
 
 
 kevin.talk("This is an example")
 
 tim.talk("Hello")
+crazy.talk()
